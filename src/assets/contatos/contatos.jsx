@@ -1,108 +1,55 @@
-import './contatos.css'
+import { FaInstagram, FaMapMarkerAlt, FaWhatsapp } from 'react-icons/fa'
 
-import {
-  FaWhatsapp,
-  FaInstagram,
-  FaFacebookF,
-  FaMapMarkerAlt
-} from 'react-icons/fa'
+import './contatos.css'
 
 function Contatos() {
   return (
-
     <section className="contatosContainer" id="contatos">
-
       <div className="topoContatos">
-
         <h2>Entre em Contato</h2>
-
         <p>
-          Fale conosco para saber mais sobre o espaço,
-          reservas e disponibilidade para eventos.
+          Fale conosco para saber mais sobre o espaço, reservas e disponibilidade
+          para eventos.
         </p>
-
       </div>
 
       <div className="cardsContatos">
-
-        {/* WHATSAPP */}
-
+        {/* Atendimento e reservas */}
         <a
-          href="https://wa.me/5553999999999"
+          href="https://wa.me/5553981555422"
           target="_blank"
           rel="noopener noreferrer"
           className="cardContato"
         >
-
-          <FaWhatsapp />
-
+          <FaWhatsapp aria-hidden="true" />
           <h3>WhatsApp</h3>
-
-          <p>
-            Solicite informações e reservas.
-          </p>
-
+          <p>Solicite informações e reservas.</p>
         </a>
 
-        {/* INSTAGRAM */}
-
+        {/* Rede social oficial */}
         <a
           href="https://instagram.com/centroportuguesrgoficial"
           target="_blank"
           rel="noopener noreferrer"
           className="cardContato"
         >
-
-          <FaInstagram />
-
+          <FaInstagram aria-hidden="true" />
           <h3>Instagram</h3>
-
-          <p>
-            Acompanhe fotos e novidades.
-          </p>
-
+          <p>Acompanhe fotos e novidades.</p>
         </a>
 
-        {/* FACEBOOK */}
-
+        {/* Endereço no Google Maps */}
         <a
-          href="https://facebook.com/centroportuguesdoriogrande"
+          href="https://www.google.com/maps/search/?api=1&query=-32.138161,-52.193124"
           target="_blank"
           rel="noopener noreferrer"
           className="cardContato"
         >
-
-          <FaFacebookF />
-
-          <h3>Facebook</h3>
-
-          <p>
-            Veja publicações e eventos.
-          </p>
-
-        </a>
-
-        {/* LOCALIZAÇÃO */}
-
-        <a
-          href="https://www.google.com/maps/search/?api=1&query=-32.138103342070636, -52.193144404575634"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="cardContato"
-        >
-
-          <FaMapMarkerAlt />
-
+          <FaMapMarkerAlt aria-hidden="true" />
           <h3>Localização</h3>
-
-          <p>
-            Rio Grande - RS
-          </p>
-
+          <p>Rio Grande - RS</p>
         </a>
-
       </div>
-
     </section>
   )
 }

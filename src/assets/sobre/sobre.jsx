@@ -4,11 +4,8 @@ function Sobre() {
   return (
     <section className="sobreContainer" id="sobre">
       <div className="sobreOverlay">
-
         <div className="sobreConteudo">
-          <span className="sobreEtiqueta">
-            Sobre o clube
-          </span>
+          <span className="sobreEtiqueta">Sobre o clube</span>
 
           <h2>Tradição e convivência em um só lugar</h2>
 
@@ -19,12 +16,11 @@ function Sobre() {
           </p>
 
           <p>
-            Com ambiente amplo e estrutura preparada para eventos, o clube
-            oferece uma experiência acolhedora para confraternizações,
-            aniversários, encontros e celebrações.
+            Com ambiente amplo e estrutura preparada para eventos, o clube oferece
+            uma experiência acolhedora para confraternizações, aniversários,
+            encontros e celebrações.
           </p>
         </div>
-
       </div>
     </section>
   )

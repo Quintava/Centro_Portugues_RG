@@ -1,173 +1,127 @@
+/* Apresentação principal */
 .inicioContainer {
-  width: 100%;
-  min-height: 100vh;
-
-  background-image: url('../img/frente-clube2.jpg');
-
-  background-size: cover;
-  background-position: center;
-
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('../img/frente-clube2.jpg');
+  background-position: center;
+  background-size: cover;
 }
 
+/* Escurece a foto para destacar o conteúdo */
 .inicioOverlay {
-  width: 100%;
-  min-height: 100vh;
-
-  background: linear-gradient(
-    rgba(15, 25, 55, 0.70),
-    rgba(15, 25, 55, 0.82)
-  );
-
   display: flex;
   align-items: center;
   justify-content: center;
-
+  width: 100%;
+  min-height: 100vh;
   padding: 120px 20px 60px;
+  background: linear-gradient(
+    rgba(15, 25, 55, 0.7),
+    rgba(15, 25, 55, 0.82)
+  );
 }
 
 .inicioConteudo {
-
-  max-width: 900px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  width: 100%;
+  max-width: 900px;
+  color: #fff;
   text-align: center;
-
-  color: white;
 }
 
 .inicioEtiqueta {
   display: inline-block;
-
   margin-bottom: 20px;
   padding: 8px 18px;
-
   border: 1px solid #5da9e9;
-
   border-radius: 50px;
-
   color: #ebf6ff;
-
   font-size: 0.9rem;
   font-weight: 600;
 }
 
-.inicioConteudo h1 {
-  font-size: 4rem;
-
-  margin-bottom: 20px;
-
-  font-weight: 700;
+.logoInicio {
+  width: min(100%, 520px);
+  height: auto;
+  margin-bottom: 30px;
+  object-fit: contain;
 }
 
 .inicioConteudo p {
   max-width: 720px;
-
   margin: 0 auto 35px;
-
   font-size: 1.2rem;
-
   line-height: 1.7;
 }
 
+/* Botões da página inicial */
 .inicioBotoes {
   display: flex;
   justify-content: center;
-  gap: 18px;
-
   flex-wrap: wrap;
+  gap: 18px;
 }
-
-.logoInicio {
-
-  width: 100%;
-  max-width: 520px;
-
-  margin-bottom: 30px;
-
-  display: block;
-
-  object-fit: contain;
-}
-
-/* BOTÕES */
 
 .botaoInicio {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  text-decoration: none;
-
   padding: 14px 28px;
-
   border-radius: 12px;
-
   font-size: 1rem;
   font-weight: 600;
-
-  transition: 0.3s ease;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
-
-/* PRINCIPAL */
 
 .botaoInicio.principal {
   background-color: #1f3c88;
-
-  color: white;
+  color: #fff;
 }
 
 .botaoInicio.principal:hover {
   background-color: #16306d;
-
   transform: translateY(-3px);
 }
 
-/* SECUNDÁRIO */
-
 .botaoInicio.secundario {
   border: 2px solid #5da9e9;
-
-  color: white;
+  color: #fff;
 }
 
 .botaoInicio.secundario:hover {
   background-color: #5da9e9;
-
   color: #1f3c88;
-
   transform: translateY(-3px);
 }
 
-/* RESPONSIVO */
-
+/* Ajustes para telas menores */
 @media (max-width: 768px) {
-
-  .inicioConteudo h1 {
-    font-size: 2.8rem;
+  .inicioOverlay {
+    padding: 110px 20px 50px;
   }
 
   .logoInicio {
-
-  max-width: 320px;
-}
+    width: min(100%, 320px);
+  }
 
   .inicioConteudo p {
     font-size: 1rem;
   }
 
+  .inicioBotoes {
+    width: 100%;
+  }
+
   .botaoInicio {
     width: 100%;
     max-width: 280px;
-
-    text-align: center;
   }
 }
-
-  

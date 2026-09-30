@@ -1,18 +1,18 @@
-import './inicio.css'
 import { FaInstagram } from 'react-icons/fa'
-import emblema from '../img/emblema.png'
 
+import emblema from '../img/emblema.png'
+import './inicio.css'
 
 function Inicio() {
   return (
     <section className="inicioContainer" id="inicio">
       <div className="inicioOverlay">
-
         <div className="inicioConteudo">
           <span className="inicioEtiqueta">
             Tradição • Eventos • Confraternização
           </span>
 
+          {/* Identidade visual principal do clube */}
           <img
             src={emblema}
             alt="Centro Português do Rio Grande"
@@ -25,23 +25,21 @@ function Inicio() {
           </p>
 
           <div className="inicioBotoes">
-            <a href="#fotos" className="botaoInicio principal">
-              Ver fotos
+            <a href="#espaco" className="botaoInicio principal">
+              Conhecer o espaço
             </a>
 
             <a
-              href="https://www.instagram.com/"
+              href="https://instagram.com/centroportuguesrgoficial"
               target="_blank"
               rel="noopener noreferrer"
               className="botaoInicio secundario"
             >
-              <FaInstagram />
-
+              <FaInstagram aria-hidden="true" />
               Acompanhar no Instagram
             </a>
           </div>
         </div>
-
       </div>
     </section>
   )

@@ -1,69 +1,57 @@
+/* Seção institucional do clube */
 .sobreContainer {
-  width: 100%;
-  min-height: 65vh;
-
-  background-image: url('../img/igreja.jpg');
-  background-size: cover;
-  background-position: center;
-
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  min-height: 65vh;
+  background-image: url('../img/igreja.jpg');
+  background-position: center;
+  background-size: cover;
 }
 
 .sobreOverlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   min-height: 65vh;
-
+  padding: 80px 20px;
   background: linear-gradient(
     rgba(15, 25, 55, 0.78),
     rgba(15, 25, 55, 0.86)
   );
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 80px 20px;
 }
 
 .sobreConteudo {
   max-width: 850px;
-
+  color: #fff;
   text-align: center;
-
-  color: white;
 }
 
 .sobreEtiqueta {
   display: inline-block;
-
   margin-bottom: 18px;
   padding: 8px 18px;
-
   border: 1px solid #5da9e9;
   border-radius: 50px;
-
   color: #5da9e9;
-
   font-size: 0.9rem;
   font-weight: 600;
 }
 
 .sobreConteudo h2 {
-  font-size: 2.8rem;
-
   margin-bottom: 25px;
+  font-size: 2.8rem;
 }
 
 .sobreConteudo p {
-  font-size: 1.05rem;
-
-  line-height: 1.8;
-
   margin-bottom: 18px;
+  font-size: 1.05rem;
+  line-height: 1.8;
 }
 
+/* Ajustes para telas menores */
 @media (max-width: 768px) {
   .sobreContainer,
   .sobreOverlay {
